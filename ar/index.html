@@ -43,6 +43,9 @@
       renderer="logarithmicDepthBuffer: true;"
       embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+<a-assets>
+      <a-asset id="my" src="/assets/asset.glb"></a-asset>
+    </a-assets>
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
@@ -55,9 +58,9 @@
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
           <a-entity
-          gltf-model="https://kawsing.github.io/MindAR/ar/assets/asset.glb"
-              scale="5.3235522619153013 5.3235522619153013 5.3235522619153013"
-              position="10 100 0"
+          gltf-model="#my"
+              scale=".5 .5 .5"
+              position="1 1 1"
           >
           </a-entity>
       </a-nft>
